@@ -47,9 +47,9 @@
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="sayaaa">
+<meta property="og:title" content="sayaaaa">
 <meta property="og:url" content="http://github.com/sayaaaaa/sayaaaaa.github-io/tags/Games/index.html">
-<meta property="og:site_name" content="sayaaa">
+<meta property="og:site_name" content="sayaaaa">
 <meta property="article:author" content="saya">
 <meta name="twitter:card" content="summary">
 
@@ -65,7 +65,7 @@
   };
 </script>
 
-  <title>标签: Games | sayaaa</title>
+  <title>标签: Games | sayaaaa</title>
   
 
 
@@ -118,7 +118,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">sayaaa</span>
+        <span class="site-title">sayaaaa</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -361,7 +361,7 @@
       var url = decodeURI(visitors.getAttribute('id'));
       var title = visitors.getAttribute('data-flag-title');
       
-Counter('get', `/classes/Counter?where=${encodeURIComponent(JSON.stringify({ url }))}&limit=1`)
+     Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
 
         .then(response => response.json())
         .then(({ results }) => {
@@ -390,7 +390,7 @@ Counter('get', `/classes/Counter?where=${encodeURIComponent(JSON.stringify({ url
         return decodeURI(element.getAttribute('id'));
       });
 
-Counter('get', `?where=${encodeURIComponent(JSON.stringify({ url: { '$in': entries } }))}`)
+      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
         .then(response => response.json())
         .then(({ results }) => {
           if (results.length === 0) {
